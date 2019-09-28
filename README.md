@@ -49,41 +49,20 @@ individual; each column representing an SNP
 
 ### Output
 
-<<<<<<< HEAD
 -The results of EBE<sub>LASSO</sub> and EBE<sub>APML0</sub> are output
 as a list named as follows:
-=======
--The results are output as a list. 6 methods including
-EBE<sub>Enet</sub>, EBE<sub>LASSO</sub> and EBE<sub>APML0</sub> are
-introduced in the example. For the generally used EBE<sub>APML0</sub>
-method, we take lasso as the convex function. However, more choices such
-as elastic net and selection combined with BIC are also shown in the
-example.They are named as follows:
->>>>>>> 8973389aed595a805e25f39b450add34ca5bf5a5
 
     resl<-EBEL0(myData,myData_x)
     names(resl)
 
-<<<<<<< HEAD
     ## [1] "lasso" "apml0"
-=======
-    ## [1] "enet"       "lasso"      "l0enet"     "l0enetbic"  "l0lasso"   
-    ## [6] "l0lassobic"
->>>>>>> 8973389aed595a805e25f39b450add34ca5bf5a5
 
 -For each method, computational time, selected SNPs and their weight are
 reported. Take EBE<sub>APML0</sub> as an example, the first number is
 the computational time, the next half numbers are the serial number of
 the selected SNPs and the last half are their weight respectively.
 
-<<<<<<< HEAD
     resl$apml0
 
     ##      elapsed                                                     
-    ## 1.400000e-01 2.000000e+00 5.000000e+01 1.417247e-04 1.405635e-04
-=======
-    resl$l0lasso
-
-    ##      elapsed                                                     
-    ## 1.300000e-01 2.000000e+00 5.000000e+01 1.417247e-04 1.405635e-04
->>>>>>> 8973389aed595a805e25f39b450add34ca5bf5a5
+    ## 2.300000e-01 2.000000e+00 5.000000e+01 2.145460e-04 2.380804e-04
